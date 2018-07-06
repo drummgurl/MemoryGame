@@ -6,10 +6,10 @@ I've created a simple matching card game created for the Front-End Nanodegree pr
 
 ## Table of Contents
 
-* [Getting Started](#gettingstarted)
-* [Built With](#brackets)
-* [Sources Used](#sourcesused)
-* [Contributing](#contributing)
+* [Getting Started]
+* [Built With]
+* [Sources Used]
+* [Contributing]
 
 ## Getting Started
 

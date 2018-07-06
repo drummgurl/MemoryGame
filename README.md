@@ -1,17 +1,31 @@
-# Memory Game Project
+# The World of Tomorrow Matching Game
+
+Good news everyone! :rocket: 
+
+I've created a simple matching card game created for the Front-End Nanodegree program at Udacity as a Grow with Google scholarship student. I am a **HUGE** fan of Futurama so I attempted style my game after the show. The game is very basic.  You select cards to make matches until the game ends and you find out your final stats. Give it a whirl!
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Getting Started](#gettingstarted)
+* [Built With](#brackets)
+* [Sources Used](#sourcesused)
 * [Contributing](#contributing)
 
-## Instructions
+## Getting Started
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+To start a new matching game, simply click on your first card. The cards will jiggle slightly until you flip one over. The time clock will automatically start and keep going until you've made your last match. 
 
-To get started, open `js/app.js` and start building out the app's functionality
+There are 8 matches total. If you like, you can click the replay icon to shuffle the cards or if you get stuck! 
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+Once all matches are made a modal will appear telling you you've won! You will also see your final stats including time, moves and stars. You'll also have the option to play again or cancel to look at the board. 
+
+## Built With
+  * [Brackets](http://brackets.io/)
+  * Followed Udacity/Grow with Google Project rubric in the [Udacity Classroom](https://classroom.udacity.com/me).
+  
+## Sources Used
+  * [Font Awesome](https://fontawesome.com/) - used free icons, solid colored
+  * [Colour Lovers](http://www.colourlovers.com/pattern/4119960/Escape_from_PlanetX!) - background pattern
 
 ## Contributing
 

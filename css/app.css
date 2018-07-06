@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background: #ffffff url('../img/planetexpress.png') no-repeat center center fixed; /* Background pattern from Colour Lovers */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Anton', sans-serif;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    align-items: center;
+    background: #33C1BA;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 3em;
+    min-height: 680px;
+    padding: 32px;
+    width: 660px;
+}
+
+.deck .card {
+    align-items: center;
+    background: #99358B;
+    border-radius: 8px;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 0;
+    height: 125px;
+    justify-content: center;
+    width: 125px;   
+}
+
+.deck .card.open {
+    background: #F99120;
+    cursor: default;
+    transform: rotateY(0);
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    background: #C6BCB4;
+    cursor: default;
+    font-size: 33px;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    float:left;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.score-panel .stars {
+    display: inline-block;
+    margin: 0;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.score-panel .stars li {
+    display: inline-block;
+    list-style: none;
+}
+
+.score-panel .restart {
+    cursor: pointer;
+    float: right;
+    padding-left: 20px;
+    
+}
+
+/*modal*/
+
+.modal_background {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,0.438);
+    z-index:2;
+}
+
+.hide{
+    display: none;
+}
+
+.modal_body {
+    position:relative;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -70%);
+}
+
+.modal_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    border-bottom: 1px solid gray;
+}
+
+.modal_title {
+    text-align: center;
+    padding-top: 15px;
+    color: #F99120;
+}
+
+.modal_stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom:1px solid gray;
+    color: #99358B;
+}
+
+.modal_buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.modal_button {
+    width: 60px;
+    height: 30px;
+}

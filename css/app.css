@@ -185,9 +185,56 @@ h1 {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+    border: 1px solid gray;
 }
 
 .modal-button {
     width: 60px;
     height: 30px;
+}
+
+/* Responsive */
+/* Responsive */
+
+@media screen and (max-width: 400px) {
+    body {
+        margin: 20px;
+    }
+    h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .clock {
+    padding-right: 20px;
+  }
+  .deck {
+    width: 200px;
+    min-height: 200px;
+    padding: 15px;
+  }
+  .deck .card {
+    height: 50px;
+    width: 50px;
+  }
+  .score-panel {
+    text-align: left;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .deck {
+    width: 400px;
+    min-height: 400px;
+    padding: 22px;
+  }
+  .deck .card {
+    height: 75px;
+    width: 75px;
+  }
 }

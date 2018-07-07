@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/planetexpress.png') no-repeat center center fixed; /* Background pattern from Colour Lovers */
+    background: #fff url('../img/planetexpress.png') no-repeat center center fixed; /* Background pattern from Colour Lovers */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,6 +32,7 @@ body {
     justify-content: center;
 }
 
+/* Header */
 h1 {
     font-weight: 300;
 }
@@ -42,7 +43,7 @@ h1 {
 
 .deck {
     align-items: center;
-    background: #33C1BA;
+    background: #33c1ba;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
     display: flex;
@@ -56,10 +57,10 @@ h1 {
 
 .deck .card {
     align-items: center;
-    background: #99358B;
+    background: #99358b;
     border-radius: 8px;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     display: flex;
     font-size: 0;
@@ -68,9 +69,10 @@ h1 {
     width: 125px;   
 }
 
+/* animations for cards */
 .deck .card:hover {
     animation: shake 0.5s;
-    animation-iteration-count: infinite.
+    animation-iteration-count: infinite;
 }
 
 @keyframes shake {
@@ -88,7 +90,7 @@ h1 {
 }
 
 .deck .card.open {
-    background: #F99120;
+    background: #f99120;
     cursor: default;
     transform: rotateY(0);
 }
@@ -98,7 +100,7 @@ h1 {
 }
 
 .deck .card.match {
-    background: #C6BCB4;
+    background: #c6bcb4;
     cursor: default;
     font-size: 33px;
 }
@@ -108,7 +110,7 @@ h1 {
  */
 
 .score-panel {
-    float:left;
+    float: left;
     margin-bottom: 10px;
     text-align: left;
 }
@@ -128,36 +130,35 @@ h1 {
 .score-panel .restart {
     cursor: pointer;
     float: right;
-    padding-left: 20px;
-    
+    padding-left: 20px; 
 }
 
-/*modal*/
+/* modal styles */
 
-.modal_background {
+.modal-background {
     position: absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background: rgba(0,0,0,0.438);
-    z-index:2;
+    z-index: 2;
 }
 
 .hide{
     display: none;
 }
 
-.modal_body {
-    position:relative;
+.modal-body {
+    position: relative;
     width: 400px;
     top: 50%;
     left: 50%;
-    background: #ffffff;
+    background: #fff;
     transform: translate(-50%, -70%);
 }
 
-.modal_heading{
+.modal-heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,28 +166,28 @@ h1 {
     border-bottom: 1px solid gray;
 }
 
-.modal_title {
+.modal-title {
     text-align: center;
     padding-top: 15px;
     color: #F99120;
 }
 
-.modal_stats {
+.modal-stats {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
-    border-bottom:1px solid gray;
-    color: #99358B;
+    border-bottom: 1px solid gray;
+    color: #99358b;
 }
 
-.modal_buttons {
+.modal-buttons {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
 }
 
-.modal_button {
+.modal-button {
     width: 60px;
     height: 30px;
 }

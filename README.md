@@ -4,6 +4,8 @@ Good news everyone! :rocket:
 
 I've created a simple matching card game created for the Front-End Nanodegree program at Udacity as a Grow with Google scholarship student. I am a **HUGE** fan of Futurama so I attempted style my game after the show. The game is very basic.  You select cards to make matches until the game ends and you find out your final stats. Give it a whirl!
 
+[Play here](https://drummgurl.github.io/MemoryGame/)
+
 ## Table of Contents
 
 * **Getting Started**
